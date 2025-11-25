@@ -20,7 +20,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=grafana
     volumes:
       - grafana-config:/etc/grafana/
-      # TODO: put configs here : /etc/grafana/provisioning/datasources
+      # put configs here : /etc/grafana/provisioning/datasources
 
 volumes:
   prometheus-config:
@@ -31,7 +31,7 @@ volumes:
       o: bind
   grafana-config:
     driver: local
-    driver_opts:
-      type: none
-      device: /etc/grafana/
-      o: bind
+    # driver_opts:
+    #   type: none
+    #   device: /etc/grafana/
+    #   o: bind
