@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 docker run --name srv-prometheus -it \
     --mount type=bind,source=/etc/prometheus/prometheus.yml,destination=/etc/prometheus/prometheus.yml \
     -p 9090:9090 \
