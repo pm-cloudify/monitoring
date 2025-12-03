@@ -6,15 +6,30 @@ here I have configured Prometheus and Grafana to monitor my target nodes.
 ## Prometheus
 
 Using Prometheus to monitor my services stat and system metrics.
-I have installed Node Exported to read node metric (e.g. CPU, Mem, ...).
+I have installed Node Exporter to read node metric (e.g. CPU, Mem, ...).
+
+    1 - install prometheus
+    2 - set your config files
+    3 - install node exporter to gather system metrics
 
 ## Grafana
 
 Using Grafana, I cloud visualize given metrics from Prometheus :))
 
+    1 - create a dashboard
+    2 - connect to prometheus and visualize metrics you want
+
+## Security
+
+    1- only grafana should be able to connect to prometheus
+    2- enable tls
+    3- grafana provides authentication, so use it
+
 ## related docs:
 
-Helpful docs for prometheus.
+Use official Prometheus/Grafana Docs.
+
+Helpful links:
 
 1- <a href="https://prometheus.io/docs/guides/node-exporter/">Install Node Exporter</a>
 
